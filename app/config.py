@@ -41,22 +41,33 @@ BASE_DIR = Path(__file__).parent.parent
 
 
 def _build_database_url():
-    """Сборка DATABASE_URL из переменных окружения."""
+    """Сборка DATABASE_URL из переменных окружения.
+
+    Пароль обязателен: без него приложение не стартует (защита от дефолтных секретов).
+    """
     url = os.getenv("DATABASE_URL")
     if url:
         return url
+
+    password = os.getenv("DATABASE_PASSWORD")
+    if not password:
+        raise RuntimeError(
+            "DATABASE_PASSWORD is not set. "
+            "Установите переменную окружения DATABASE_PASSWORD (или DATABASE_URL)."
+        )
 
     host = os.getenv("DATABASE_HOST", "localhost")
     port = os.getenv("DATABASE_PORT", "5432")
     name = os.getenv("DATABASE_NAME", "production_db")
     user = os.getenv("DATABASE_USER", "postgres")
-    password = os.getenv("DATABASE_PASSWORD", "12345")
     return f"postgresql://{user}:{password}@{host}:{port}/{name}"
 
 
 class BaseConfig:
     """Базовая конфигурация."""
-    SECRET_KEY = os.getenv("SECRET_KEY", "production-is-system-secret-key-change-me")
+    SECRET_KEY = os.getenv("SECRET_KEY")
+    if not SECRET_KEY:
+        raise RuntimeError("SECRET_KEY is not set. Установите переменную окружения SECRET_KEY.")
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     PERMANENT_SESSION_LIFETIME = 3600
 
