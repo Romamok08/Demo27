@@ -153,6 +153,8 @@ def create_app(config_name=None):
     # а не db.create_all(). Этот код удобен для быстрого старта, но не заменяет миграции.
     with app.app_context():
         check_db_connection()
-        db.create_all()
+        # db.create_all() — только для разработки. В продакшене — миграции (Flask-Migrate).
+        if app.config.get("DEBUG"):
+            db.create_all()
 
     return app
