@@ -1,0 +1,625 @@
+************* Module app
+app/__init__.py:40:0: R0914: Too many local variables (20/15) (too-many-locals)
+app/__init__.py:85:8: C0415: Import outside toplevel (app.models.User) (import-outside-toplevel)
+app/__init__.py:92:4: C0415: Import outside toplevel (app.blueprints.web.web_bp) (import-outside-toplevel)
+app/__init__.py:93:4: C0415: Import outside toplevel (app.blueprints.auth.auth_bp) (import-outside-toplevel)
+app/__init__.py:96:4: C0415: Import outside toplevel (app.views.client_view.clients_bp) (import-outside-toplevel)
+app/__init__.py:97:4: C0415: Import outside toplevel (app.views.product_view.products_bp) (import-outside-toplevel)
+app/__init__.py:98:4: C0415: Import outside toplevel (app.views.material_view.materials_bp) (import-outside-toplevel)
+app/__init__.py:99:4: C0415: Import outside toplevel (app.views.operation_view.operations_bp) (import-outside-toplevel)
+app/__init__.py:100:4: C0415: Import outside toplevel (app.views.specification_view.specifications_bp) (import-outside-toplevel)
+app/__init__.py:101:4: C0415: Import outside toplevel (app.views.sales_order_view.sales_orders_bp) (import-outside-toplevel)
+app/__init__.py:102:4: C0415: Import outside toplevel (app.views.production_order_view.production_orders_bp) (import-outside-toplevel)
+app/__init__.py:103:4: C0415: Import outside toplevel (app.views.admin_view.admin_bp) (import-outside-toplevel)
+app/__init__.py:104:4: C0415: Import outside toplevel (app.views.note_view.notes_bp) (import-outside-toplevel)
+app/__init__.py:126:18: W0613: Unused argument 'e' (unused-argument)
+app/__init__.py:130:23: W0613: Unused argument 'e' (unused-argument)
+app/__init__.py:147:15: W0718: Catching too general exception Exception (broad-exception-caught)
+app/__init__.py:148:12: W1203: Use lazy % formatting in logging functions (logging-fstring-interpolation)
+************* Module app.config
+app/config.py:57:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+app/config.py:72:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+app/config.py:77:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+app/config.py:82:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+************* Module app.models
+app/models.py:78:0: C0301: Line too long (104/100) (line-too-long)
+app/models.py:118:0: C0301: Line too long (101/100) (line-too-long)
+app/models.py:250:0: C0301: Line too long (125/100) (line-too-long)
+app/models.py:23:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+app/models.py:66:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+app/models.py:92:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+app/models.py:107:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+app/models.py:122:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+app/models.py:144:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+app/models.py:166:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+app/models.py:188:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+app/models.py:215:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+app/models.py:239:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+app/models.py:274:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+app/models.py:309:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+app/models.py:351:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+app/models.py:440:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+************* Module app.puzzle_captcha
+app/puzzle_captcha.py:61:8: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+app/puzzle_captcha.py:66:4: R0914: Too many local variables (18/15) (too-many-locals)
+app/puzzle_captcha.py:126:8: R1705: Unnecessary "elif" after "return", replace only that "elif" with "if" (no-else-return)
+app/puzzle_captcha.py:134:4: R0914: Too many local variables (19/15) (too-many-locals)
+************* Module app.blueprints.auth
+app/blueprints/auth.py:76:4: C0415: Import outside toplevel (flask_login.current_user) (import-outside-toplevel)
+************* Module app.blueprints.web
+app/blueprints/web.py:30:0: R0911: Too many return statements (7/6) (too-many-return-statements)
+app/blueprints/web.py:176:4: C0415: Import outside toplevel (flask.make_response) (import-outside-toplevel)
+app/blueprints/web.py:263:11: W0718: Catching too general exception Exception (broad-exception-caught)
+app/blueprints/web.py:249:8: C0415: Import outside toplevel (app.models.Note) (import-outside-toplevel)
+app/blueprints/web.py:258:8: C0415: Import outside toplevel (app.utils.build_note_response) (import-outside-toplevel)
+************* Module app.blueprints.production_orders
+app/blueprints/production_orders.py:43:0: C0301: Line too long (118/100) (line-too-long)
+************* Module app.blueprints.notes
+app/blueprints/notes.py:38:11: W0718: Catching too general exception Exception (broad-exception-caught)
+app/blueprints/notes.py:59:11: W0718: Catching too general exception Exception (broad-exception-caught)
+************* Module app.blueprints.puzzle_captcha
+app/blueprints/puzzle_captcha.py:24:11: W0718: Catching too general exception Exception (broad-exception-caught)
+app/blueprints/puzzle_captcha.py:54:11: W0718: Catching too general exception Exception (broad-exception-caught)
+app/blueprints/puzzle_captcha.py:80:11: W0718: Catching too general exception Exception (broad-exception-caught)
+app/blueprints/puzzle_captcha.py:4:0: C0411: standard import "io" should be placed before third party imports "flask.Blueprint", "PIL.Image" (wrong-import-order)
+************* Module app.blueprints.admin
+app/blueprints/admin.py:68:0: C0301: Line too long (108/100) (line-too-long)
+************* Module app.blueprints.specifications
+app/blueprints/specifications.py:30:0: C0301: Line too long (108/100) (line-too-long)
+************* Module app.repositories.user_repository
+app/repositories/user_repository.py:15:8: C0415: Import outside toplevel (sqlalchemy.select) (import-outside-toplevel)
+************* Module app.dtos.sales_order_dto
+app/dtos/sales_order_dto.py:46:0: C0301: Line too long (101/100) (line-too-long)
+app/dtos/sales_order_dto.py:32:0: R0902: Too many instance attributes (8/7) (too-many-instance-attributes)
+************* Module app.dtos.material_dto
+app/dtos/material_dto.py:19:0: C0301: Line too long (108/100) (line-too-long)
+************* Module app.dtos.operation_dto
+app/dtos/operation_dto.py:19:0: C0301: Line too long (111/100) (line-too-long)
+************* Module app.dtos.product_dto
+app/dtos/product_dto.py:19:0: C0301: Line too long (105/100) (line-too-long)
+************* Module app.dtos.production_order_dto
+app/dtos/production_order_dto.py:52:0: C0301: Line too long (106/100) (line-too-long)
+app/dtos/production_order_dto.py:36:0: R0902: Too many instance attributes (10/7) (too-many-instance-attributes)
+************* Module app.views.production_order_view
+app/views/production_order_view.py:29:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/production_order_view.py:50:0: C0301: Line too long (114/100) (line-too-long)
+app/views/production_order_view.py:52:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/production_order_view.py:63:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/production_order_view.py:169:0: C0301: Line too long (106/100) (line-too-long)
+app/views/production_order_view.py:170:0: C0301: Line too long (119/100) (line-too-long)
+app/views/production_order_view.py:25:4: R0914: Too many local variables (18/15) (too-many-locals)
+app/views/production_order_view.py:27:8: C0415: Import outside toplevel (app.extensions.db) (import-outside-toplevel)
+app/views/production_order_view.py:28:8: C0415: Import outside toplevel (sqlalchemy.text) (import-outside-toplevel)
+app/views/production_order_view.py:59:20: R1731: Consider using 'max_num = max(max_num, num)' instead of unnecessary if block (consider-using-max-builtin)
+app/views/production_order_view.py:73:8: W0404: Reimport 'db' (imported line 27) (reimported)
+app/views/production_order_view.py:73:8: C0415: Import outside toplevel (app.extensions.db) (import-outside-toplevel)
+app/views/production_order_view.py:128:8: C0415: Import outside toplevel (app.extensions.db) (import-outside-toplevel)
+app/views/production_order_view.py:158:8: C0415: Import outside toplevel (app.extensions.db) (import-outside-toplevel)
+************* Module app.views.client_view
+app/views/client_view.py:32:0: C0301: Line too long (107/100) (line-too-long)
+************* Module app.views.specification_view
+app/views/specification_view.py:26:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/specification_view.py:44:0: C0301: Line too long (112/100) (line-too-long)
+app/views/specification_view.py:78:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/specification_view.py:118:0: C0301: Line too long (116/100) (line-too-long)
+app/views/specification_view.py:119:0: C0301: Line too long (119/100) (line-too-long)
+app/views/specification_view.py:7:0: C0411: third party import "sqlalchemy.select" should be placed before first party imports "app.views.base_view.BaseAPIView", "app.models.SpecificationMaterial", "app.extensions.db"  (wrong-import-order)
+************* Module app.views.product_view
+app/views/product_view.py:30:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/product_view.py:44:0: C0301: Line too long (114/100) (line-too-long)
+app/views/product_view.py:79:0: C0301: Line too long (109/100) (line-too-long)
+app/views/product_view.py:115:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/product_view.py:118:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/product_view.py:155:0: C0301: Line too long (101/100) (line-too-long)
+app/views/product_view.py:166:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/product_view.py:176:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/product_view.py:135:8: C0415: Import outside toplevel (app.models.Product) (import-outside-toplevel)
+app/views/product_view.py:8:0: C0411: third party import "sqlalchemy.select" should be placed before first party imports "app.views.base_view.BaseAPIView", "app.services.product_service.ProductService", "app.models.ProductPrice", "app.extensions.db"  (wrong-import-order)
+************* Module app.views.material_view
+app/views/material_view.py:30:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/material_view.py:44:0: C0301: Line too long (115/100) (line-too-long)
+app/views/material_view.py:79:0: C0301: Line too long (112/100) (line-too-long)
+app/views/material_view.py:135:0: C0301: Line too long (101/100) (line-too-long)
+app/views/material_view.py:141:0: C0301: Line too long (103/100) (line-too-long)
+app/views/material_view.py:115:8: C0415: Import outside toplevel (app.models.Material) (import-outside-toplevel)
+app/views/material_view.py:8:0: C0411: third party import "sqlalchemy.select" should be placed before first party imports "app.views.base_view.BaseAPIView", "app.services.material_service.MaterialService", "app.models.MaterialPrice", "app.extensions.db"  (wrong-import-order)
+************* Module app.views.admin_view
+app/views/admin_view.py:67:0: C0301: Line too long (120/100) (line-too-long)
+app/views/admin_view.py:124:0: C0301: Line too long (104/100) (line-too-long)
+app/views/admin_view.py:100:12: C0415: Import outside toplevel (app.extensions.db) (import-outside-toplevel)
+************* Module app.views.sales_order_view
+app/views/sales_order_view.py:27:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:47:0: C0301: Line too long (109/100) (line-too-long)
+app/views/sales_order_view.py:49:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:60:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:73:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:83:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:87:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:101:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:109:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:116:0: C0301: Line too long (118/100) (line-too-long)
+app/views/sales_order_view.py:119:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:124:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:134:0: C0301: Line too long (118/100) (line-too-long)
+app/views/sales_order_view.py:136:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:146:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:148:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:160:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:163:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:167:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:172:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:183:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:186:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:192:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:201:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:208:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:217:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:221:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:224:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:227:0: C0301: Line too long (110/100) (line-too-long)
+app/views/sales_order_view.py:281:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:299:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:305:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:322:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:331:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:335:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:349:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:357:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:359:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:362:0: C0301: Line too long (101/100) (line-too-long)
+app/views/sales_order_view.py:365:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:369:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:374:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:377:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:381:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:382:0: C0301: Line too long (140/100) (line-too-long)
+app/views/sales_order_view.py:383:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:389:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:400:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:403:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:408:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:416:0: C0301: Line too long (160/100) (line-too-long)
+app/views/sales_order_view.py:417:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:423:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:431:0: C0301: Line too long (197/100) (line-too-long)
+app/views/sales_order_view.py:432:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:436:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:438:0: C0301: Line too long (106/100) (line-too-long)
+app/views/sales_order_view.py:439:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:452:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:466:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:471:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:475:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:479:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:519:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:543:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/sales_order_view.py:554:0: C0301: Line too long (110/100) (line-too-long)
+app/views/sales_order_view.py:23:4: R0914: Too many local variables (59/15) (too-many-locals)
+app/views/sales_order_view.py:116:12: W0621: Redefining name 'ProductionOrder' from outer scope (line 7) (redefined-outer-name)
+app/views/sales_order_view.py:25:8: C0415: Import outside toplevel (app.extensions.db) (import-outside-toplevel)
+app/views/sales_order_view.py:26:8: C0415: Import outside toplevel (sqlalchemy.text) (import-outside-toplevel)
+app/views/sales_order_view.py:56:20: R1731: Consider using 'max_num = max(max_num, num)' instead of unnecessary if block (consider-using-max-builtin)
+app/views/sales_order_view.py:116:12: W0404: Reimport 'ProductionOrder' (imported line 7) (reimported)
+app/views/sales_order_view.py:116:12: C0415: Import outside toplevel (app.models.ProductionOrder, app.models.ProductionOrderItem, app.models.SpecificationMaterial, app.models.SpecificationOperation) (import-outside-toplevel)
+app/views/sales_order_view.py:117:12: C0415: Import outside toplevel (app.models.MaterialPrice, app.models.OperationPrice) (import-outside-toplevel)
+app/views/sales_order_view.py:118:12: C0415: Import outside toplevel (sqlalchemy.select) (import-outside-toplevel)
+app/views/sales_order_view.py:142:24: R1731: Consider using 'prod_max_num = max(prod_max_num, num)' instead of unnecessary if block (consider-using-max-builtin)
+app/views/sales_order_view.py:23:4: R0912: Too many branches (22/12) (too-many-branches)
+app/views/sales_order_view.py:23:4: R0915: Too many statements (105/50) (too-many-statements)
+app/views/sales_order_view.py:116:12: W0611: Unused SpecificationMaterial imported from app.models (unused-import)
+app/views/sales_order_view.py:116:12: W0611: Unused SpecificationOperation imported from app.models (unused-import)
+app/views/sales_order_view.py:277:4: R0914: Too many local variables (43/15) (too-many-locals)
+app/views/sales_order_view.py:279:8: C0415: Import outside toplevel (app.extensions.db) (import-outside-toplevel)
+app/views/sales_order_view.py:280:8: C0415: Import outside toplevel (sqlalchemy.text) (import-outside-toplevel)
+app/views/sales_order_view.py:362:12: C0415: Import outside toplevel (app.models.ProductionOrderItem, app.models.SpecificationMaterial, app.models.SpecificationOperation) (import-outside-toplevel)
+app/views/sales_order_view.py:363:12: C0415: Import outside toplevel (app.models.MaterialPrice, app.models.OperationPrice) (import-outside-toplevel)
+app/views/sales_order_view.py:364:12: C0415: Import outside toplevel (sqlalchemy.select) (import-outside-toplevel)
+app/views/sales_order_view.py:277:4: R0912: Too many branches (21/12) (too-many-branches)
+app/views/sales_order_view.py:277:4: R0915: Too many statements (86/50) (too-many-statements)
+app/views/sales_order_view.py:280:8: W0611: Unused text imported from sqlalchemy (unused-import)
+app/views/sales_order_view.py:362:12: W0611: Unused SpecificationMaterial imported from app.models (unused-import)
+app/views/sales_order_view.py:362:12: W0611: Unused SpecificationOperation imported from app.models (unused-import)
+app/views/sales_order_view.py:451:8: W0621: Redefining name 'ProductionOrder' from outer scope (line 7) (redefined-outer-name)
+app/views/sales_order_view.py:450:8: C0415: Import outside toplevel (app.extensions.db) (import-outside-toplevel)
+app/views/sales_order_view.py:451:8: W0404: Reimport 'ProductionOrder' (imported line 7) (reimported)
+app/views/sales_order_view.py:451:8: C0415: Import outside toplevel (app.models.ProductionOrder) (import-outside-toplevel)
+app/views/sales_order_view.py:517:8: C0415: Import outside toplevel (app.extensions.db) (import-outside-toplevel)
+app/views/sales_order_view.py:518:8: C0415: Import outside toplevel (app.services.production_order_service.ProductionOrderService) (import-outside-toplevel)
+************* Module app.views.operation_view
+app/views/operation_view.py:30:0: C0303: Trailing whitespace (trailing-whitespace)
+app/views/operation_view.py:44:0: C0301: Line too long (119/100) (line-too-long)
+app/views/operation_view.py:79:0: C0301: Line too long (115/100) (line-too-long)
+app/views/operation_view.py:135:0: C0301: Line too long (101/100) (line-too-long)
+app/views/operation_view.py:140:0: C0301: Line too long (103/100) (line-too-long)
+app/views/operation_view.py:141:0: C0301: Line too long (107/100) (line-too-long)
+app/views/operation_view.py:115:8: C0415: Import outside toplevel (app.models.Operation) (import-outside-toplevel)
+app/views/operation_view.py:8:0: C0411: third party import "sqlalchemy.select" should be placed before first party imports "app.views.base_view.BaseAPIView", "app.services.operation_service.OperationService", "app.models.OperationPrice", "app.extensions.db"  (wrong-import-order)
+************* Module app.views.note_view
+app/views/note_view.py:22:0: C0301: Line too long (106/100) (line-too-long)
+app/views/note_view.py:30:11: W0718: Catching too general exception Exception (broad-exception-caught)
+app/views/note_view.py:47:11: W0718: Catching too general exception Exception (broad-exception-caught)
+************* Module app.services.auth_service
+app/services/auth_service.py:9:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+app/services/auth_service.py:6:0: C0411: third party import "flask_login.login_user" should be placed before first party imports "app.repositories.user_repository.UserRepository", "app.auth.verify_password", "app.extensions.db"  (wrong-import-order)
+************* Module app.services.sales_order_service
+app/services/sales_order_service.py:33:0: C0301: Line too long (121/100) (line-too-long)
+app/services/sales_order_service.py:55:0: C0303: Trailing whitespace (trailing-whitespace)
+app/services/sales_order_service.py:69:0: C0303: Trailing whitespace (trailing-whitespace)
+app/services/sales_order_service.py:75:0: C0303: Trailing whitespace (trailing-whitespace)
+app/services/sales_order_service.py:84:0: C0303: Trailing whitespace (trailing-whitespace)
+app/services/sales_order_service.py:94:0: C0303: Trailing whitespace (trailing-whitespace)
+app/services/sales_order_service.py:101:0: C0303: Trailing whitespace (trailing-whitespace)
+app/services/sales_order_service.py:110:0: C0303: Trailing whitespace (trailing-whitespace)
+app/services/sales_order_service.py:121:0: C0303: Trailing whitespace (trailing-whitespace)
+app/services/sales_order_service.py:24:4: R0914: Too many local variables (40/15) (too-many-locals)
+app/services/sales_order_service.py:33:8: C0415: Import outside toplevel (app.models.ProductPrice, app.models.MaterialPrice, app.models.OperationPrice, app.models.SpecificationMaterial, app.models.SpecificationOperation) (import-outside-toplevel)
+app/services/sales_order_service.py:34:8: C0415: Import outside toplevel (app.extensions.db) (import-outside-toplevel)
+app/services/sales_order_service.py:35:8: C0415: Import outside toplevel (sqlalchemy.select) (import-outside-toplevel)
+app/services/sales_order_service.py:33:8: W0611: Unused ProductPrice imported from app.models (unused-import)
+app/services/sales_order_service.py:33:8: W0611: Unused SpecificationMaterial imported from app.models (unused-import)
+app/services/sales_order_service.py:33:8: W0611: Unused SpecificationOperation imported from app.models (unused-import)
+************* Module app.services.production_order_service
+app/services/production_order_service.py:26:0: C0301: Line too long (107/100) (line-too-long)
+app/services/production_order_service.py:48:0: C0303: Trailing whitespace (trailing-whitespace)
+app/services/production_order_service.py:65:0: C0303: Trailing whitespace (trailing-whitespace)
+app/services/production_order_service.py:85:0: C0303: Trailing whitespace (trailing-whitespace)
+app/services/production_order_service.py:93:0: C0303: Trailing whitespace (trailing-whitespace)
+app/services/production_order_service.py:111:0: C0303: Trailing whitespace (trailing-whitespace)
+app/services/production_order_service.py:119:0: C0303: Trailing whitespace (trailing-whitespace)
+app/services/production_order_service.py:24:4: R0914: Too many local variables (30/15) (too-many-locals)
+app/services/production_order_service.py:26:8: C0415: Import outside toplevel (app.models.SpecificationMaterial, app.models.SpecificationOperation, app.models.MaterialPrice, app.models.OperationPrice) (import-outside-toplevel)
+app/services/production_order_service.py:27:8: C0415: Import outside toplevel (app.extensions.db) (import-outside-toplevel)
+app/services/production_order_service.py:28:8: C0415: Import outside toplevel (sqlalchemy.select) (import-outside-toplevel)
+app/services/production_order_service.py:26:8: W0611: Unused SpecificationMaterial imported from app.models (unused-import)
+app/services/production_order_service.py:26:8: W0611: Unused SpecificationOperation imported from app.models (unused-import)
+************* Module app.services.client_service
+app/services/client_service.py:30:0: C0301: Line too long (104/100) (line-too-long)
+app/services/client_service.py:30:4: R0913: Too many arguments (6/5) (too-many-arguments)
+app/services/client_service.py:30:4: R0917: Too many positional arguments (6/5) (too-many-positional-arguments)
+************* Module app.services.specification_service
+app/services/specification_service.py:6:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+app/services/specification_service.py:14:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+************* Module app.services.product_service
+app/services/product_service.py:1:0: R0801: Similar lines in 2 files
+==app.blueprints.production_orders:[53:80]
+==app.views.production_order_view:[67:95]
+            order_date=order_date,
+            subdivision=data.get("subdivision"),
+            client_id=client_uuid,
+            status=data.get("status", "Новый"),
+        )
+        from app.extensions import db
+        db.session.add(new_order)
+        db.session.flush()
+
+        if "items" in data:
+            for item_data in data["items"]:
+                try:
+                    product_uuid = uuid.UUID(item_data["product_id"])
+                except (ValueError, AttributeError):
+                    continue
+
+                item = ProductionOrderItem(
+                    production_order=new_order,
+                    product_id=product_uuid,
+                    quantity=item_data.get("quantity", 1),
+                    completed_quantity=item_data.get("completed_quantity", 0),
+                    unit_price=item_data.get("unit_price", 0),
+                    total_price=item_data.get("total_price", 0),
+                )
+                db.session.add(item)
+
+        db.session.commit()
+ (duplicate-code)
+app/services/product_service.py:1:0: R0801: Similar lines in 2 files
+==app.blueprints.auth:[43:59]
+==app.services.auth_service:[30:46]
+        return jsonify({
+            "error": "Unauthorized",
+            "message": "Неверный логин или пароль",
+        }), 401
+
+    if user.is_blocked:
+        return jsonify({
+            "error": "Forbidden",
+            "message": "Вы заблокированы",
+        }), 403
+
+    login_user(user)
+    user.failed_attempts = 0
+    db.session.commit()
+
+    return jsonify({ (duplicate-code)
+app/services/product_service.py:1:0: R0801: Similar lines in 2 files
+==app.services.sales_order_service:[67:84]
+==app.views.sales_order_view:[184:202]
+                product_cost = 0.0
+
+                # 1. Материальные затраты
+                spec_mats = product.spec_materials
+                for spec_mat in spec_mats:
+                    mat_qty_per_unit = float(spec_mat.quantity_per_unit)
+                    mat_qty = mat_qty_per_unit * quantity
+
+                    # Получаем актуальную цену материала
+                    price_stmt = select(MaterialPrice).where(
+                        MaterialPrice.material_id == spec_mat.material_id
+                    ).order_by(MaterialPrice.effective_date.desc()).limit(1)
+                    price_record = db.session.execute(price_stmt).scalar_one_or_none()
+                    mat_price = float(price_record.price) if price_record else 0.0
+                    mat_total = mat_qty * mat_price
+                    product_cost += mat_total
+
+                # 2. Затраты на операции (duplicate-code)
+app/services/product_service.py:1:0: R0801: Similar lines in 2 files
+==app.services.sales_order_service:[95:110]
+==app.views.sales_order_view:[202:218]
+                spec_ops = product.spec_operations
+                for spec_op in spec_ops:
+                    time_norm = float(spec_op.time_norm)
+                    op_qty = float(spec_op.op_quantity)
+                    total_time = time_norm * op_qty * quantity
+
+                    # Получаем актуальную цену операции
+                    price_stmt = select(OperationPrice).where(
+                        OperationPrice.operation_id == spec_op.operation_id
+                    ).order_by(OperationPrice.effective_date.desc()).limit(1)
+                    price_record = db.session.execute(price_stmt).scalar_one_or_none()
+                    op_price = float(price_record.price) if price_record else 0.0
+                    op_total = total_time * op_price
+                    product_cost += op_total
+
+                # Обновляем total_price позиции (duplicate-code)
+app/services/product_service.py:1:0: R0801: Similar lines in 2 files
+==app.blueprints.admin:[73:84]
+==app.blueprints.auth:[123:134]
+    new_user = User(
+        login=login_value,
+        password_hash=hash_password(password_value),
+        role=role,
+        is_blocked=False,
+        failed_attempts=0,
+    )
+    db.session.add(new_user)
+    db.session.commit()
+
+    return jsonify({ (duplicate-code)
+app/services/product_service.py:1:0: R0801: Similar lines in 2 files
+==app.views.production_order_view:[50:63]
+==app.views.sales_order_view:[47:60]
+            )).scalars().all()
+
+            max_num = 0
+            for on in result:
+                try:
+                    # Извлекаем число из формата "ЗК-000001"
+                    num_part = on.split('-')[-1]
+                    num = int(num_part)
+                    if num > max_num:
+                        max_num = num
+                except (ValueError, IndexError):
+                    continue
+ (duplicate-code)
+app/services/product_service.py:1:0: R0801: Similar lines in 2 files
+==app.services.sales_order_service:[97:110]
+==app.views.sales_order_view:[419:430]
+                        time_norm = float(spec_op.time_norm)
+                        op_qty = float(spec_op.op_quantity)
+                        total_time = time_norm * op_qty * quantity
+
+                        price_stmt = select(OperationPrice).where(
+                            OperationPrice.operation_id == spec_op.operation_id
+                        ).order_by(OperationPrice.effective_date.desc()).limit(1)
+                        price_record = db.session.execute(price_stmt).scalar_one_or_none()
+                        op_price = float(price_record.price) if price_record else 0.0
+                        op_total = total_time * op_price
+                        product_cost += op_total (duplicate-code)
+app/services/product_service.py:1:0: R0801: Similar lines in 2 files
+==app.blueprints.auth:[32:43]
+==app.blueprints.web:[70:81]
+    user = db.session.execute(
+        db.select(User).where(User.login == login_value)
+    ).scalar_one_or_none()
+
+    if not user or not verify_password(password_value, user.password_hash):
+        if user:
+            user.failed_attempts += 1
+            if user.failed_attempts >= 3:
+                user.is_blocked = True
+            db.session.commit()
+ (duplicate-code)
+app/services/product_service.py:1:0: R0801: Similar lines in 2 files
+==app.blueprints.production_orders:[139:148]
+==app.views.production_order_view:[136:146]
+    if "order_number" in data:
+        order.order_number = data["order_number"]
+    if "order_date" in data:
+        od = data["order_date"]
+        order.order_date = date.fromisoformat(od) if isinstance(od, str) else od
+    if "subdivision" in data:
+        order.subdivision = data["subdivision"]
+    if "status" in data:
+        order.status = data["status"] (duplicate-code)
+app/services/product_service.py:1:0: R0801: Similar lines in 2 files
+==app.blueprints.notes:[48:60]
+==app.views.note_view:[37:48]
+    try:
+        note = db.session.get(Note, note_id)
+        if not note:
+            return jsonify({"error": "Not Found", "message": "Заметка не найдена"}), 404
+
+        user = db.session.get(User, note.id_user)
+        login = user.login if user else "unknown"
+
+        return jsonify(build_note_response(note, login)), 200
+
+    except Exception:
+        db.session.rollback() (duplicate-code)
+app/services/product_service.py:1:0: R0801: Similar lines in 2 files
+==app.services.sales_order_service:[72:84]
+==app.views.sales_order_view:[405:415]
+                        mat_qty_per_unit = float(spec_mat.quantity_per_unit)
+                        mat_qty = mat_qty_per_unit * quantity
+
+                        price_stmt = select(MaterialPrice).where(
+                            MaterialPrice.material_id == spec_mat.material_id
+                        ).order_by(MaterialPrice.effective_date.desc()).limit(1)
+                        price_record = db.session.execute(price_stmt).scalar_one_or_none()
+                        mat_price = float(price_record.price) if price_record else 0.0
+                        mat_total = mat_qty * mat_price
+                        product_cost += mat_total (duplicate-code)
+app/services/product_service.py:1:0: R0801: Similar lines in 2 files
+==app.blueprints.production_orders:[111:119]
+==app.services.production_order_service:[34:42]
+        "order_id": str(order.order_id),
+        "order_number": order.order_number,
+        "order_date": order.order_date.isoformat() if order.order_date else None,
+        "subdivision": order.subdivision,
+        "client_id": str(order.client_id) if order.client_id else None,
+        "total_amount": float(order.total_amount) if order.total_amount else 0,
+        "status": order.status,
+        "created_at": order.created_at.isoformat() if order.created_at else None, (duplicate-code)
+app/services/product_service.py:1:0: R0801: Similar lines in 2 files
+==app.blueprints.materials:[21:35]
+==app.blueprints.products:[21:35]
+        ]
+    }), 200
+
+
+@materials_bp.route("/", methods=["POST"])
+def create_material():
+    """Создание материала."""
+    data = request.get_json()
+    if not data or "name" not in data or "code" not in data:
+        return jsonify({
+            "error": "Bad Request",
+            "message": "Необходимо указать name и code",
+        }), 400
+ (duplicate-code)
+app/services/product_service.py:1:0: R0801: Similar lines in 2 files
+==app.blueprints.notes:[30:39]
+==app.views.note_view:[22:31]
+        results = db.session.execute(stmt).all()
+
+        notes = [build_note_response(note, login) for note, login in results]
+        total = db.session.execute(func.count(Note.note_id)).scalar()
+
+        return jsonify({"notes": notes, "total": total}), 200
+
+    except Exception:
+        db.session.rollback() (duplicate-code)
+app/services/product_service.py:1:0: R0801: Similar lines in 2 files
+==app.blueprints.admin:[8:24]
+==app.views.admin_view:[6:18]
+admin_bp = Blueprint("admin", __name__)
+
+
+def _require_admin():
+    """Проверка прав администратора."""
+    if not current_user.is_authenticated:
+        return jsonify({"error": "Unauthorized", "message": "Необходима авторизация"}), 401
+    if current_user.role != "Администратор":
+        return jsonify({"error": "Forbidden", "message": "Доступ запрещён"}), 403
+    return None
+
+
+@admin_bp.route("/users/", methods=["GET"])
+@login_required
+def list_users():
+    """Список пользователей.""" (duplicate-code)
+app/services/product_service.py:1:0: R0801: Similar lines in 2 files
+==app.views.client_view:[58:66]
+==app.views.product_view:[70:78]
+        except (ValueError, AttributeError):
+            return self._error_response("Неверный формат UUID")
+
+        data = request.get_json()
+        if not data:
+            return self._error_response("Нет данных")
+
+        try: (duplicate-code)
+app/services/product_service.py:1:0: R0801: Similar lines in 2 files
+==app.views.material_view:[70:78]
+==app.views.operation_view:[70:78]
+        except (ValueError, AttributeError):
+            return self._error_response("Неверный формат UUID")
+
+        data = request.get_json()
+        if not data:
+            return self._error_response("Нет данных")
+
+        try: (duplicate-code)
+app/services/product_service.py:1:0: R0801: Similar lines in 2 files
+==app.services.production_order_service:[86:93]
+==app.views.sales_order_view:[193:199]
+                price_stmt = select(MaterialPrice).where(
+                    MaterialPrice.material_id == spec_mat.material_id
+                ).order_by(MaterialPrice.effective_date.desc()).limit(1)
+                price_record = db.session.execute(price_stmt).scalar_one_or_none()
+                mat_price = float(price_record.price) if price_record else 0.0
+                mat_total = mat_qty * mat_price
+ (duplicate-code)
+app/services/product_service.py:1:0: R0801: Similar lines in 2 files
+==app.services.production_order_service:[112:119]
+==app.views.sales_order_view:[209:215]
+                price_stmt = select(OperationPrice).where(
+                    OperationPrice.operation_id == spec_op.operation_id
+                ).order_by(OperationPrice.effective_date.desc()).limit(1)
+                price_record = db.session.execute(price_stmt).scalar_one_or_none()
+                op_price = float(price_record.price) if price_record else 0.0
+                op_total = total_time * op_price
+ (duplicate-code)
+app/services/product_service.py:1:0: R0801: Similar lines in 2 files
+==app.blueprints.auth:[37:43]
+==app.repositories.user_repository:[20:25]
+        if user:
+            user.failed_attempts += 1
+            if user.failed_attempts >= 3:
+                user.is_blocked = True
+            db.session.commit() (duplicate-code)
+app/services/product_service.py:1:0: R0801: Similar lines in 2 files
+==app.blueprints.production_orders:[44:49]
+==app.views.production_order_view:[37:42]
+    client_uuid = None
+    if data.get("client_id"):
+        try:
+            client_uuid = uuid.UUID(data["client_id"])
+        except (ValueError, AttributeError): (duplicate-code)
+app/services/product_service.py:1:0: R0801: Similar lines in 2 files
+==app.blueprints.notes:[8:19]
+==app.views.note_view:[8:19]
+notes_bp = Blueprint("notes", __name__)
+
+
+@notes_bp.route("/", methods=["GET"])
+def get_notes():
+    """Список заметок."""
+    try:
+        skip = request.args.get("skip", 0, type=int)
+        limit = request.args.get("limit", 100, type=int)
+
+        if skip < 0 or limit < 1: (duplicate-code)
+app/services/product_service.py:1:0: R0801: Similar lines in 2 files
+==app.blueprints.admin:[48:54]
+==app.views.admin_view:[45:51]
+    admin_check = _require_admin()
+    if admin_check:
+        return admin_check
+
+    data = request.get_json()
+    if not data or "login" not in data or "password" not in data: (duplicate-code)
+app/services/product_service.py:1:0: R0801: Similar lines in 2 files
+==app.views.material_view:[107:115]
+==app.views.product_view:[127:135]
+        except (ValueError, AttributeError):
+            return self._error_response("Неверный формат UUID")
+
+        data = request.get_json()
+        if not data or "price" not in data:
+            return self._error_response("Укажите price")
+
+        from app.models import Material (duplicate-code)
+
+-----------------------------------
+Your code has been rated at 8.84/10
+
