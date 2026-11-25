@@ -100,7 +100,6 @@ def register():
       3. Или использовать отдельный админ-панель для создания пользователей.
     """
     data = request.get_json()
-    data = request.get_json()
     if not data or "login" not in data or "password" not in data:
         return jsonify({
             "error": "Bad Request",
@@ -120,7 +119,9 @@ def register():
             "message": f"Пользователь '{login_value}' уже существует",
         }), 400
 
-    role = data.get("role", "Пользователь")
+    # Публичная регистрация всегда создаёт обычного пользователя.
+    # Роль "Администратор" может быть назначена только через админ-панель.
+    role = "Пользователь"
     new_user = User(
         login=login_value,
         password_hash=hash_password(password_value),
